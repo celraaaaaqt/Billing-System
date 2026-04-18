@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Login</title>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="Loginform">
+
+  <!-- LEFT SIDE -->
+  <div class="login-left">
+    <img src="assests/knhs-logo.jpg" alt="KNHS Logo">
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div class="login-right">
+
+    <h1 id="title">WELCOME! </h1>
+
+    <form id="Logg">
+
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Enter Username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter Password" required> 
+
+      <div class="show-pass">
+        <input type="checkbox" id="showpass" onclick="showPass()">
+        <label for="showpass">Show Password</label>
+      </div>
+
+      <button id="submit" type="submit">Login</button>
+
+      <p id="errorMessage" class="error-message"></p>
+
+    </form>
+
+  </div>
+
+</div>
+
+<script src="login.js"></script>
+</body>
+</html>
